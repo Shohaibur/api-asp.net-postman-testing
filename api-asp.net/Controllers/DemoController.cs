@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.UI.WebControls;
 
 namespace api_asp.net.Controllers
 {
@@ -23,11 +24,13 @@ namespace api_asp.net.Controllers
             string name = st_id == 1 ? "Rochi" : "Not found";
             return Request.CreateResponse(HttpStatusCode.OK, name);
         }
+
         [HttpPost]
-        [Route("api/test/post")] //post test using postman
-        public HttpResponseMessage Post()
+        [Route("api/test/post")] //post test using postman  
+        public HttpResponseMessage Post(Login u) //object recieve (u) ,Login = instance
         {
-            return Request.CreateResponse(HttpStatusCode.OK, "Post recieved");
+            return Request.CreateResponse(HttpStatusCode.OK, u.UserName); //get UserName in postman
+            
         }
     }
 }
