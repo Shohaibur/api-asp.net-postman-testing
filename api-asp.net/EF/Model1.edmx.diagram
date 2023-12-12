@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="781561563f9d4469b6ac553b3cc45a59" Name="Diagram1">
+        <EntityTypeShape EntityType="ASP.Net_entity_framework_learningModel.Cours" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ASP.Net_entity_framework_learningModel.CourseStudent" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ASP.Net_entity_framework_learningModel.Department" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ASP.Net_entity_framework_learningModel.Student" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ASP.Net_entity_framework_learningModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="ASP.Net_entity_framework_learningModel.FK_Courses_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="ASP.Net_entity_framework_learningModel.FK_CourseStudent_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="ASP.Net_entity_framework_learningModel.FK_CourseStudent_Students1" ManuallyRouted="false" />
+        <AssociationConnector Association="ASP.Net_entity_framework_learningModel.FK_Students_Departments" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

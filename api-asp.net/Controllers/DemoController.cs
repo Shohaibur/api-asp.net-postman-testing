@@ -30,7 +30,7 @@ namespace api_asp.net.Controllers
         public HttpResponseMessage Post(Login u) //object recieve (u) ,Login = instance
         {
             return Request.CreateResponse(HttpStatusCode.OK, u.UserName); //get UserName in postman
-            
+           
         }
     }
 }
